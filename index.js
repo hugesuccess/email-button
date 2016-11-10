@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-
-const style = {
-  margin: 24,
-};
-
+import './emailButton.css'
 
 class EmailButton extends Component {
     constructor(props, context) {
@@ -19,6 +15,7 @@ class EmailButton extends Component {
     render() {
         return (
             <button
+                className="text-glow"
                 onClick={this.email}
             >Contact Us</button>
        );
